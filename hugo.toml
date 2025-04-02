@@ -7,6 +7,10 @@ enableEmoji = true
 [taxonomies]
 tag = 'tags'
 
+[caches]
+ [caches.images]
+   dir = ":cacheDir/images"
+
 [params]
 # Home meta description
 description = "A tech-oriented personal blog curated by Francesco Tomaselli."
