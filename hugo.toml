@@ -1,0 +1,110 @@
+baseURL = 'https://tomfran.github.io'
+languageCode = 'en-us'
+title = 'Clarence Dimitri'
+theme = 'typo'
+enableEmoji = true
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Home meta description
+description = "A tech-oriented personal blog curated by Francesco Tomaselli."
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content in markdown
+homeIntroTitle = 'Hello!'
+homeIntroContent = """
+Bienvenue sur mon espace. Je m'appelle Clarence et je suis développeur backend en Java, principalement avec Spring Boot.     
+Ici, je partagerai mes découvertes, mes astuces, des bonnes pratiques, et aussi des sujets techniques qui suscitent ma curiosité.
+"""
+
+singleDateFormat = '2 Jan 2006'
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '02 Jan 2006'
+
+# Footer
+showFooter = true
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/charlesdimitri/"
+
+#[[params.social]]
+#name = "medium"
+#url = "https://medium.com/@tomfran"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/clarenced"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+#[[params.menu]]
+#name = "about"
+#url = "/about"
+
+#[[params.menu]]
+#name = "library"
+#url = "/library"
+
+# [[params.menu]]
+# name = "tags"
+# url = "/tags"
+
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'bw'
+
+# Deploy settings
+
+[[deployment.matchers]]
+pattern = "^.+\\.(js|css|svg|ttf|woff2)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg|gif|webp)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[params.giscus]
+enable = false
+repo = "tomfran/blog"
+repoid = "R_kgDOLtSszw"
+category = "General"
+categoryid = "DIC_kwDOLtSsz84CfLm4"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+
+[params.umami]
+enable = true
+websiteId = "cc219028-551e-4f3b-bbc7-e124ca907ce0"
+jsLocation = "https://cloud.umami.is/script.js"
